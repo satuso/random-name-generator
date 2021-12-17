@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Name Generator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Random Name Generator</h1>
+    </div>
+    <div class="container">
+      <div class="name" id="name"></div>
+      <form name="form" onSubmit="handleSubmit()">
+        <label for="gender">
+          <p id="gender">Please select gender:</p>
+        </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label><br>  
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label><br>
+        <label for="language">
+          <p>Choose a language:</p>
+        </label>
+        <select name="language" id="language">
+          <option id="EN" value="EN">English</option>
+          <option id="FI" value="FI">Finnish</option>
+          <option id="FR" value="FR">French</option>
+          <option id="IT" value="IT">Italian</option>
+          <option id="JP" value="JP">Japanese</option>
+          <option id="SE" value="SE">Swedish</option>
+        </select>
+        <br>
+        <label for="number">
+          <p>Number of first names:</p>
+        </label>
+        <select class="custom-select" name="number" id="number">
+          <option id="one" value="1">1</option>
+          <option id="two" value="2">2</option>
+          <option id="three" value="3">3</option>
+          <option id="four" value="4">4</option>
+        </select>
+        <br><br>
+        <input type="checkbox" id="lastname" name="lastname" value="lastname">
+        <label for="lastname">Lastname</label><br>
+        <button id="btn">Generate Name</button><br>
+        <p id="error" class="error"></p>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
